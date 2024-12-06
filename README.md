@@ -35,7 +35,9 @@ Copiar código
    2. Subitem 2.2
 3. Item 3
 [Texto do Link](https://github.com)
-![Imagem do WhatsApp de 2024-12-06 à(s) 16 26 55_fdb6d679](https://github.com/user-attachments/assets/2eaf625c-6afd-43be-a2b1-da8bf089f119)
+
+![image](https://github.com/user-attachments/assets/127ed3d5-15ec-41a3-93fa-c2d4f4fe3ade)
+
 Aqui está um exemplo de `código em linha`.
 
 ```python
