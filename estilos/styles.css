@@ -1,14 +1,61 @@
 body {
     background-color: rgb(207, 148, 225);
-    font-family: Arial;
+    font-family: Arial, sans-serif; /* Adiciona uma fonte secundária como fallback */
     font-size: 16px;
+    color: #333; /* Torna o texto mais legível */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Adiciona espaçamento entre as linhas para facilitar a leitura */
+}
+
+img.lado {
+    float: right;
+    margin: 10px; /* Adiciona espaço ao redor da imagem */
+    max-width: 100px; /* Limita o tamanho máximo da imagem */
+    border-radius: 5px; /* Adiciona bordas arredondadas à imagem */
 }
 
 main {
     background-color: white;
-    width: 500px;
-    margin: 20px auto; /* Adicionado para dar espaço superior */
-    padding: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Corrigido o formato da sombra */
-    border-radius: 5px; /* Adicionado para deixar cantos arredondados (opcional) */
+    width: 80%; /* Ajusta largura para se adaptar melhor a dispositivos menores */
+    max-width: 600px; /* Define um limite máximo para a largura */
+    margin: 40px auto; /* Espaço superior e centralização */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais suave e moderna */
+    border-radius: 10px; /* Cantos mais arredondados */
+}
+
+h1, h2 {
+    color: #4A235A; /* Usa uma cor complementar para títulos */
+    text-align: center; /* Centraliza os títulos */
+}
+
+p {
+    text-align: justify; /* Justifica o texto para uma aparência mais elegante */
+    margin: 10px 0;
+}
+
+ul {
+    margin: 10px 0;
+    padding: 0 20px; /* Indenta a lista */
+}
+
+a {
+    color: #6C3483; /* Adiciona uma cor de link elegante */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+}
+
+footer {
+    background-color: #4A235A;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Fixa o rodapé na parte inferior da página */
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
 }
