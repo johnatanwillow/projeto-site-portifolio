@@ -1,5 +1,16 @@
+header {
+    width: 100%; /* O cabeçalho ocupa toda a largura da página */
+    height: 400px; /* Ajuste a altura do cabeçalho conforme necessário */
+    background-color: #f0f0f0; /* Define a cor de fundo do cabeçalho */
+}
+
+header img {
+    width: 100%; /* A imagem ocupa toda a largura do cabeçalho */
+    height: 100%; /* A imagem ocupa toda a altura do cabeçalho */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+}
 body {
-    background-color: rgb(207, 148, 225);
+    background-color: rgb(172, 214, 144);
     font-family: Arial, sans-serif; /* Adiciona uma fonte secundária como fallback */
     font-size: 16px;
     color: #333; /* Torna o texto mais legível */
@@ -50,7 +61,7 @@ a:hover {
 }
 
 footer {
-    background-color: #4A235A;
+    background-color: #559461;
     color: white;
     text-align: center;
     padding: 10px 0;
