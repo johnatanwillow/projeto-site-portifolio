@@ -1,26 +1,40 @@
+/* Estilo do cabeçalho */
 header {
-    width: 100%; /* O cabeçalho ocupa toda a largura da página */
-    height: 400px; /* Ajuste a altura do cabeçalho conforme necessário */
-    background-color: #0000; /* Define a cor de fundo do cabeçalho */
+    width: 100%; /* Cabeçalho ocupa toda a largura */
+    height: auto; /* Permite que a altura seja ajustada pela imagem */
+    overflow: hidden; /* Garante que nada transborde para fora do cabeçalho */
 }
 
-header img {
-    width: 100%; /* A imagem ocupa toda a largura do cabeçalho */
-    height: 100%; /* A imagem ocupa toda a altura do cabeçalho */
+/* Estilo da imagem do banner */
+.banner {
+    width: 100%; /* Imagem preenche a largura do cabeçalho */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Evita espaços extras causados por imagens inline */
     object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    margin: 0; /* Remove margens automáticas */
+    padding: 0; /* Remove preenchimentos extras */
 }
+
+.banner {
+  width: 100%; /* Adapta a largura ao tamanho da tela */
+  height: auto; /* Mantém a proporção */
+  object-fit: cover; /* Garante que o banner preencha todo o espaço sem distorcer */
+}
+
+
 body {
-    background-color: rgb(165, 221, 127);
+
+    background-color: rgb(208, 245, 185);
     font-family: Arial, sans-serif; /* Adiciona uma fonte secundária como fallback */
     font-size: 16px;
-    color: #333; /* Torna o texto mais legível */
+    color: #0d0d0d; /* Torna o texto mais legível */
     margin: 0;
     padding: 0px;
     line-height: 1.6; /* Adiciona espaçamento entre as linhas para facilitar a leitura */
 }
 
 img.lado {
-    float: right;
+    float: center;
     margin: 10px; /* Adiciona espaço ao redor da imagem */
     max-width: 100px; /* Limita o tamanho máximo da imagem */
     border-radius: 5px; /* Adiciona bordas arredondadas à imagem */
