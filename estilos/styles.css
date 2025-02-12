@@ -1,4 +1,8 @@
 /* Estilo do cabeçalho */
+*{
+    margin: 0;
+    padding: 0;
+}
 header {
     width: 100%; /* Cabeçalho ocupa toda a largura */
     height: auto; /* Permite que a altura seja ajustada pela imagem */
@@ -51,10 +55,17 @@ main {
 }
 
 h1, h2 {
-    color: #4A235A; /* Usa uma cor complementar para títulos */
+    color: rgb(45, 45, 147); /* Usa uma cor complementar para títulos */
     text-align: center; /* Centraliza os títulos */
 }
+h3 {
+    color: rgb(45, 45, 147);
+    text-align: center;
+}
 
+.titulo-destaque{
+    color:rgb(45, 45, 147)
+}
 p {
     text-align: justify; /* Justifica o texto para uma aparência mais elegante */
     margin: 10px 0;
