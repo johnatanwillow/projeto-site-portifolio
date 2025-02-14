@@ -56,8 +56,13 @@ main {
     border-radius: 10px; /* Cantos mais arredondados */
 }
 
-h1, h2 {
-    color: rgb(45, 45, 147); /* Usa uma cor complementar para títulos */
+.apresentacao {
+    color: rgb(121, 52, 173); /* Usa uma cor complementar para títulos */
+    text-align: center; /* Centraliza os títulos */
+   
+}
+.apresentacao__intro {
+    color: rgb(67, 65, 198); /* Usa uma cor complementar para títulos */
     text-align: center; /* Centraliza os títulos */
 }
 h3 {
