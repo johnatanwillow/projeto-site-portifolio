@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+/* Importa as fontes "Krona One" e "Montserrat" do Google Fonts para o uso no site */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* O seletor universal (*) aplica a seguinte regra a todos os elementos da página:
+   - Remove as margens (margin) e os preenchimentos (padding) padrão.
+   - Aplica o box-sizing: border-box, o que faz com que padding e border não afetem o tamanho final do elemento. */
+
+body {
+    background-color: #000;
+    color: rgb(231, 236, 231);
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    line-height: 1.5; 
+}
+/* Aplica estilos ao corpo (body) da página:
+   - Define o fundo da página como preto (#000).
+   - Define a cor do texto como um tom de cinza claro (rgb(231, 236, 231)).
+   - Usa a fonte "Arial", com uma fonte alternativa "sans-serif".
+   - Aplica box-sizing: border-box para o body.
+   - Define o espaçamento entre linhas (line-height) em 1.5 para melhor legibilidade.
+   - Faz com que a altura do corpo ocupe 100% da altura da janela do navegador (100vh). */
+.cabecalho{
+  padding: 2% 0% 0% 10%;
+}
+.cabecalho__menu{
+  display: flex;
+  gap: 80px;
+}
+.cabecalho__menu__link{
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #22d4fd;
+  text-decoration: none;
+}
+.apresentacao {
+  padding: 3% 10%;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Estilos para a classe ".apresentacao":
+   - Aplica margem de 10% no topo e 15% nas laterais.
+   - Usa o modelo de layout flexbox para organizar os elementos dentro dessa classe.
+   - Alinha os itens no centro verticalmente (align-items: center).
+   - Distribui os itens de forma que o espaço entre eles seja o máximo possível (justify-content: space-between). */
+
+/*As duas propriedades do Flexbox que, quando utilizadas no elemento-pai, são responsáveis pelo espaçamento dos elementos-filhos são: 1. justify-content: essa propriedade controla o alinhamento dos elementos-filhos ao longo do eixo principal do contêiner flex (horizontal ou vertical, dependendo da propriedade flex-direction). 2. align-items: essa propriedade controla o alinhamento dos elementos-filhos ao longo do eixo cruzado do contêiner flex (perpendicular ao eixo principal). Juntas, essas duas propriedades permitem que você posicione e espaçe os elementos-filhos dentro do contêiner flex de acordo com suas necessidades de layout. Continue estudando e praticando o Flexbox, você está no caminho certo para dominar essa poderosa ferramenta de layout!*/
+
+.apresentacao__conteudo {
+  width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 600;
+}
+/* Estilos para o conteúdo dentro de ".apresentacao__conteudo":
+   - Define a largura do conteúdo como 615px.
+   - Usa flexbox e organiza os itens em uma coluna (flex-direction: column).
+   - Adiciona um espaço de 40px entre os elementos dentro dessa classe (gap: 40px).
+   - Define o tamanho da fonte como 22px.
+   - Define o peso da fonte como 400 (normal). */
+
+.apresentacao__conteudo__titulo {
+  font-family: "Krona One", serif;
+}
+.titulo-destaque {
+  color: #7c408e;
+}
+/* Define a fonte "Krona One", que foi importada do Google Fonts, para os títulos dentro de ".apresentacao__conteudo__titulo". */
+
+.apresentacao__conteudo__texto {
+  font-family: "Montserrat", serif;
+  
+}
+/* Define a fonte "Montserrat", que também foi importada do Google Fonts, para o texto dentro de ".apresentacao__conteudo__texto". */
+
+.apresentacao__links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+/* Estilos para a classe ".apresentacao__links":
+   - Usa flexbox para organizar os itens dessa classe.
+   - Distribui os itens de maneira que o espaço entre eles seja o máximo possível (justify-content: space-between). */
+.apresentacao__links__subtitulo{
+  font-family: "Krona One", serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.apresentacao__links__botao {
+  /* background-color: #22D4FD*/
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 16px;
+  background-color: #0000;
+  width: 378px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  border: 2px solid #22d4fd;
+  border-radius: 25px;
+  padding: 12px 0;
+  text-decoration: none;
+  color: #f6f6f6;
+  font-family: "Montserrat", serif;
+}
+/* Estilos para os botões dentro de ".apresentacao__links__button":
+   - Define a cor de fundo como azul claro (#22d4fd).
+   - Define a largura do botão como 280px.
+   - Define o tamanho da fonte como 22px.
+   - Define o peso da fonte como 600 (negrito).
+   - Alinha o texto no centro.
+   - Adiciona bordas arredondadas de 16px.
+   - Aplica um padding de 21.5px no topo e na parte inferior (sem padding nas laterais).
+   - Remove o sublinhado padrão de links com text-decoration: none.
+   - Define a cor do texto como preto (#000).
+   - Define a fonte como "Montserrat", que foi importada. */
+
+   .apresentacao__links__botao:hover {
+    background-color: #272727;
+}
+.link-personalizado {
+  color: #22d4fd; /* Escolha a cor desejada */
+  text-decoration: none; /* Remove o sublinhado (opcional) */
+}
+
+.link-personalizado:hover {
+  color: #272727; /* Cor ao passar o mouse (opcional) */
+  text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
+}
+
+.foto {
+  border-radius: 16px;
+}
+/* Aplica bordas arredondadas de 16px para qualquer elemento com a classe ".foto", geralmente usada para imagens */
+.rodape{
+  color: #000000;
+  background-color: #22d4fd;
+  padding: 14px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 0px;
+}
