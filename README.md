@@ -1,57 +1,44 @@
-# projeto site
- Olá Mundo. 
- Projeto de site 001 criado em 06/12/2024. 
-Estou muito feliz de ter criado este projeto. 
----
-- [x] Início do Site Olá Mundo
-- [ ] Tarefa pendente
-- [ ] Outra tarefa pendente
-      
-:smile: :rocket: :tada:
----
+Portfólio Pessoal - Johnatan Willow
 
-O Markdown é uma linguagem de marcação simples que permite formatar texto de maneira eficaz, especialmente útil para arquivos como README.md no GitHub. Abaixo estão exemplos práticos e úteis para você usar em seus repositórios do GitHub:
+Bem-vindo ao meu portfólio pessoal! Este projeto tem como objetivo apresentar minhas habilidades, experiências e conquistas profissionais na área de desenvolvimento Front-end e Tecnologia da Informação.
 
-1. Títulos
-Os títulos são criados usando # no início da linha:
+✨ Sobre o Projeto
 
-markdown
-Copiar código
-# Título Nível 1
-## Título Nível 2
-### Título Nível 3
-#### Título Nível 4
-**Negrito** ou __Negrito__
-*Itálico* ou _Itálico_
-***Negrito e Itálico***
-- Item 1
-  - Subitem 1
-  - Subitem 2
-* Item 2
-+ Item 3
-1. Item 1
-2. Item 2
-   1. Subitem 2.1
-   2. Subitem 2.2
-3. Item 3
-[Texto do Link](https://github.com)
+Este site foi desenvolvido utilizando HTML e CSS, proporcionando uma interface intuitiva e responsiva. Ele contém as seguintes páginas:
 
-![image](https://github.com/user-attachments/assets/127ed3d5-15ec-41a3-93fa-c2d4f4fe3ade)
+Home: Introdução ao meu trabalho e minhas redes sociais.
 
-Aqui está um exemplo de `código em linha`.
+Currículo: Minhas experiências profissionais, formação acadêmica e certificações.
 
-```python
-# Exemplo em Python
-def ola():
-    print("Olá, mundo!")
----
+Sobre Mim: Minha história e jornada profissional.
 
-| Coluna 1 | Coluna 2 | Coluna 3 |
-|----------|----------|----------|
-| Dado 1   | Dado 2   | Dado 3   |
-| Dado 4   | Dado 5   | Dado 6   |
-> Este é um bloco de citação.
-> Pode ser usado para destacar informações importantes.
+🛠 Tecnologias Utilizadas
 
-:smile: :rocket: :tada:
+HTML5
+
+CSS3
+
+Git & GitHub (para controle de versão e compartilhamento do projeto)
+
+📚 Estrutura do Projeto
+
+/
+|-- assets/                 # Imagens e ícones
+|-- styles/                 # Arquivos CSS
+|-- index.html              # Página inicial
+|-- curriculo.html          # Página de Currículo
+|-- about.html              # Página Sobre Mim
+|-- README.md               # Documento de documentação
+
+👤 Contato
+
+Sinta-se à vontade para entrar em contato comigo pelas minhas redes sociais:
+
+GitHub: johnatanwillow
+
+LinkedIn: johnatanwillow
+
+Instagram: prof.johnatanwillow
+
+🎨 Desenvolvido por Johnatan Willow
 
