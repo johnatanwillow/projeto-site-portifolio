@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
 /* Importa as fontes "Krona One" e "Montserrat" do Google Fonts para o uso no site */
+:root {
+  --cor-primaria:#000;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #22d4fd;
+  --cor-hover: #272727;
+
+  --fonte-primaria: "Krona One", serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+}
 
 * {
   margin: 0;
@@ -11,9 +20,9 @@
    - Aplica o box-sizing: border-box, o que faz com que padding e border não afetem o tamanho final do elemento. */
 
 body {
-    background-color: #000;
-    color: rgb(231, 236, 231);
-    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
     box-sizing: border-box;
     line-height: 1.5; 
 }
@@ -32,10 +41,10 @@ body {
   gap: 80px;
 }
 .cabecalho__menu__link{
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--fonte-secundaria);
   font-size: 24px;
   font-weight: 600;
-  color: #22d4fd;
+  color: var(--cor-terciaria);
   text-decoration: none;
 }
 .apresentacao {
@@ -67,15 +76,15 @@ body {
    - Define o peso da fonte como 400 (normal). */
 
 .apresentacao__conteudo__titulo {
-  font-family: "Krona One", serif;
+  font-family: var(--fonte-primaria);
 }
 .titulo-destaque {
-  color: #7c408e;
+  color: var(--cor-terciaria);
 }
 /* Define a fonte "Krona One", que foi importada do Google Fonts, para os títulos dentro de ".apresentacao__conteudo__titulo". */
 
 .apresentacao__conteudo__texto {
-  font-family: "Montserrat", serif;
+  font-family: var(--fonte-secundaria);
   
 }
 /* Define a fonte "Montserrat", que também foi importada do Google Fonts, para o texto dentro de ".apresentacao__conteudo__texto". */
@@ -91,7 +100,7 @@ body {
    - Usa flexbox para organizar os itens dessa classe.
    - Distribui os itens de maneira que o espaço entre eles seja o máximo possível (justify-content: space-between). */
 .apresentacao__links__subtitulo{
-  font-family: "Krona One", serif;
+  font-family: var(--fonte-primaria);
   font-weight: 400;
   font-size: 24px;
 }
@@ -102,17 +111,18 @@ body {
   flex-direction: row-reverse;
   justify-content: center;
   gap: 16px;
-  background-color: #0000;
+  background-color: var(--cor-primaria
+  );
   width: 378px;
   font-size: 22px;
   font-weight: 600;
   text-align: center;
-  border: 2px solid #22d4fd;
+  border: 2px solid var(--cor-terciaria);
   border-radius: 25px;
   padding: 12px 0;
   text-decoration: none;
   color: #f6f6f6;
-  font-family: "Montserrat", serif;
+  font-family: var(--fonte-secundaria);
 }
 /* Estilos para os botões dentro de ".apresentacao__links__button":
    - Define a cor de fundo como azul claro (#22d4fd).
@@ -127,15 +137,15 @@ body {
    - Define a fonte como "Montserrat", que foi importada. */
 
    .apresentacao__links__botao:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover)
 }
 .link-personalizado {
-  color: #22d4fd; /* Escolha a cor desejada */
+  color: var(--cor-terciaria); /* Escolha a cor desejada */
   text-decoration: none; /* Remove o sublinhado (opcional) */
 }
 
 .link-personalizado:hover {
-  color: #272727; /* Cor ao passar o mouse (opcional) */
+  color:var(--cor-hover); /* Cor ao passar o mouse (opcional) */
   text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
 }
 
@@ -144,11 +154,11 @@ body {
 }
 /* Aplica bordas arredondadas de 16px para qualquer elemento com a classe ".foto", geralmente usada para imagens */
 .rodape{
-  color: #000000;
-  background-color: #22d4fd;
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
   padding: 14px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--fonte-secundaria);
   font-size: 18px;
   margin: 0px;
 }
