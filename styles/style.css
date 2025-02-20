@@ -1,164 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* Importa as fontes "Krona One" e "Montserrat" do Google Fonts para o uso no site */
-:root {
-  --cor-primaria:#000;
-  --cor-secundaria: #f6f6f6;
-  --cor-terciaria: #22d4fd;
-  --cor-hover: #272727;
 
-  --fonte-primaria: "Krona One", serif;
-  --fonte-secundaria: 'Montserrat', sans-serif;
+:root {
+  --cor-primaria: #000; /* Define a cor primária como preto */
+  --cor-secundaria: #f6f6f6; /* Define a cor secundária como um tom claro */
+  --cor-terciaria: #22d4fd; /* Define a cor terciária como azul */
+  --cor-hover: #272727; /* Define a cor de hover como um tom escuro */
+
+  --fonte-primaria: "Krona One", serif; /* Define a fonte primária */
+  --fonte-secundaria: 'Montserrat', sans-serif; /* Define a fonte secundária */
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimentos padrão */
+  box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
 }
-/* O seletor universal (*) aplica a seguinte regra a todos os elementos da página:
-   - Remove as margens (margin) e os preenchimentos (padding) padrão.
-   - Aplica o box-sizing: border-box, o que faz com que padding e border não afetem o tamanho final do elemento. */
 
 body {
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-secundaria);
-    box-sizing: border-box;
-    line-height: 1.5; 
+  background-color: var(--cor-primaria); /* Define a cor de fundo como preto */
+  color: var(--cor-secundaria); /* Define a cor do texto como clara */
+  font-family: var(--fonte-secundaria); /* Usa a fonte secundária */
+  box-sizing: border-box; /* Mantém o box-sizing padrão */
+  line-height: 1.5; /* Melhora a legibilidade do texto */
 }
-/* Aplica estilos ao corpo (body) da página:
-   - Define o fundo da página como preto (#000).
-   - Define a cor do texto como um tom de cinza claro (rgb(231, 236, 231)).
-   - Usa a fonte "Arial", com uma fonte alternativa "sans-serif".
-   - Aplica box-sizing: border-box para o body.
-   - Define o espaçamento entre linhas (line-height) em 1.5 para melhor legibilidade.
-   - Faz com que a altura do corpo ocupe 100% da altura da janela do navegador (100vh). */
-.cabecalho{
-  padding: 2% 0% 0% 10%;
-}
-.cabecalho__menu{
-  display: flex;
-  gap: 80px;
-}
-.cabecalho__menu__link{
-  font-family: var(--fonte-secundaria);
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--cor-terciaria);
-  text-decoration: none;
-}
-.apresentacao {
-  padding: 3% 10%;  
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-/* Estilos para a classe ".apresentacao":
-   - Aplica margem de 10% no topo e 15% nas laterais.
-   - Usa o modelo de layout flexbox para organizar os elementos dentro dessa classe.
-   - Alinha os itens no centro verticalmente (align-items: center).
-   - Distribui os itens de forma que o espaço entre eles seja o máximo possível (justify-content: space-between). */
 
-/*As duas propriedades do Flexbox que, quando utilizadas no elemento-pai, são responsáveis pelo espaçamento dos elementos-filhos são: 1. justify-content: essa propriedade controla o alinhamento dos elementos-filhos ao longo do eixo principal do contêiner flex (horizontal ou vertical, dependendo da propriedade flex-direction). 2. align-items: essa propriedade controla o alinhamento dos elementos-filhos ao longo do eixo cruzado do contêiner flex (perpendicular ao eixo principal). Juntas, essas duas propriedades permitem que você posicione e espaçe os elementos-filhos dentro do contêiner flex de acordo com suas necessidades de layout. Continue estudando e praticando o Flexbox, você está no caminho certo para dominar essa poderosa ferramenta de layout!*/
+.cabecalho {
+  padding: 2% 0% 0% 10%; /* Define espaçamento interno */
+}
+
+.cabecalho__menu {
+  display: flex; /* Usa flexbox para organizar os itens */
+  gap: 80px; /* Define o espaçamento entre os itens */
+}
+
+.cabecalho__menu__link {
+  font-size: 2rem; /* Define tamanho da fonte */
+  font-weight: 600; /* Define peso da fonte */
+  color: var(--cor-terciaria); /* Define a cor do texto */
+  text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.apresentacao {
+  padding: 3% 10%; /* Define espaçamento interno */
+  display: flex; /* Usa flexbox */
+  align-items: center; /* Alinha os itens verticalmente */
+  justify-content: space-between; /* Distribui os itens uniformemente */
+  gap: 82px; /* Define espaçamento entre os itens */
+}
 
 .apresentacao__conteudo {
-  width: 615px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-weight: 600;
+  width: 50%; /* Define largura */
+  display: flex; /* Usa flexbox */
+  flex-direction: column; /* Organiza os itens em coluna */
+  gap: 40px; /* Define espaçamento entre os elementos */
+  font-weight: 400; /* Define peso da fonte */
 }
-/* Estilos para o conteúdo dentro de ".apresentacao__conteudo":
-   - Define a largura do conteúdo como 615px.
-   - Usa flexbox e organiza os itens em uma coluna (flex-direction: column).
-   - Adiciona um espaço de 40px entre os elementos dentro dessa classe (gap: 40px).
-   - Define o tamanho da fonte como 22px.
-   - Define o peso da fonte como 400 (normal). */
 
 .apresentacao__conteudo__titulo {
-  font-family: var(--fonte-primaria);
+  font-family: var(--fonte-primaria); /* Usa a fonte primária */
+  font-size: 2rem; /* Define tamanho da fonte */
 }
-.titulo-destaque {
-  color: var(--cor-terciaria);
-}
-/* Define a fonte "Krona One", que foi importada do Google Fonts, para os títulos dentro de ".apresentacao__conteudo__titulo". */
 
-.apresentacao__conteudo__texto {
-  font-family: var(--fonte-secundaria);
-  
+.titulo-destaque {
+  color: var(--cor-terciaria); /* Define a cor do destaque */
 }
-/* Define a fonte "Montserrat", que também foi importada do Google Fonts, para o texto dentro de ".apresentacao__conteudo__texto". */
+
+.apresentacao__conteudo__texto,
+.apresentacao__conteudo__lista {
+  font-family: var(--fonte-secundaria); /* Usa a fonte secundária */
+  font-size: 1.5rem; /* Define tamanho da fonte */
+}
+
+.apresentacao__conteudo__lista {
+  padding-left: 5%; /* Adiciona espaçamento à esquerda */
+}
 
 .apresentacao__links {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  display: flex; /* Usa flexbox */
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Centraliza os itens */
+  gap: 15px; /* Define espaçamento entre os elementos */
 }
-/* Estilos para a classe ".apresentacao__links":
-   - Usa flexbox para organizar os itens dessa classe.
-   - Distribui os itens de maneira que o espaço entre eles seja o máximo possível (justify-content: space-between). */
-.apresentacao__links__subtitulo{
-  font-family: var(--fonte-primaria);
-  font-weight: 400;
-  font-size: 24px;
+
+.apresentacao__links__subtitulo {
+  font-family: var(--fonte-primaria); /* Usa a fonte primária */
+  font-weight: 400; /* Define peso da fonte */
+  font-size: 1.5rem; /* Define tamanho da fonte */
 }
 
 .apresentacao__links__botao {
-  /* background-color: #22D4FD*/
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  gap: 16px;
-  background-color: var(--cor-primaria
-  );
-  width: 378px;
-  font-size: 22px;
-  font-weight: 600;
-  text-align: center;
-  border: 2px solid var(--cor-terciaria);
-  border-radius: 25px;
-  padding: 12px 0;
-  text-decoration: none;
-  color: #f6f6f6;
-  font-family: var(--fonte-secundaria);
+  display: flex; /* Usa flexbox */
+  flex-direction: row-reverse; /* Inverte a ordem dos itens */
+  justify-content: center; /* Centraliza os itens */
+  gap: 16px; /* Define espaçamento entre os elementos */
+  background-color: var(--cor-primaria); /* Define cor de fundo */
+  width: 50%; /* Define largura */
+  font-size: 1.5rem; /* Define tamanho da fonte */
+  font-weight: 600; /* Define peso da fonte */
+  text-align: center; /* Centraliza o texto */
+  border: 2px solid var(--cor-terciaria); /* Define borda */
+  border-radius: 25px; /* Arredonda as bordas */
+  padding: 12px 0; /* Define espaçamento interno */
+  text-decoration: none; /* Remove sublinhado */
+  color: var(--cor-secundaria); /* Define cor do texto */
+  font-family: var(--fonte-secundaria); /* Usa a fonte secundária */
 }
-/* Estilos para os botões dentro de ".apresentacao__links__button":
-   - Define a cor de fundo como azul claro (#22d4fd).
-   - Define a largura do botão como 280px.
-   - Define o tamanho da fonte como 22px.
-   - Define o peso da fonte como 600 (negrito).
-   - Alinha o texto no centro.
-   - Adiciona bordas arredondadas de 16px.
-   - Aplica um padding de 21.5px no topo e na parte inferior (sem padding nas laterais).
-   - Remove o sublinhado padrão de links com text-decoration: none.
-   - Define a cor do texto como preto (#000).
-   - Define a fonte como "Montserrat", que foi importada. */
 
-   .apresentacao__links__botao:hover {
-    background-color: var(--cor-hover)
+.apresentacao__links__botao:hover {
+  background-color: var(--cor-hover); /* Altera cor ao passar o mouse */
 }
+
 .link-personalizado {
-  color: var(--cor-terciaria); /* Escolha a cor desejada */
-  text-decoration: none; /* Remove o sublinhado (opcional) */
+  color: var(--cor-terciaria); /* Define cor do link */
+  text-decoration: none; /* Remove sublinhado */
 }
 
 .link-personalizado:hover {
-  color:var(--cor-hover); /* Cor ao passar o mouse (opcional) */
-  text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
+  color: var(--cor-hover); /* Altera cor ao passar o mouse */
+  text-decoration: underline; /* Adiciona sublinhado */
 }
 
-.foto {
-  border-radius: 16px;
+.apresentacao__imagem {
+  border-radius: 16px; /* Arredonda bordas */
+  width: 50%; /* Define largura */
 }
-/* Aplica bordas arredondadas de 16px para qualquer elemento com a classe ".foto", geralmente usada para imagens */
-.rodape{
-  color: var(--cor-primaria);
-  background-color: var(--cor-terciaria);
-  padding: 14px;
-  text-align: center;
-  font-family: var(--fonte-secundaria);
-  font-size: 18px;
-  margin: 0px;
+
+.rodape {
+  color: var(--cor-primaria); /* Define cor do texto */
+  background-color: var(--cor-terciaria); /* Define cor de fundo */
+  padding: 14px; /* Define espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  font-family: var(--fonte-secundaria); /* Usa a fonte secundária */
+  font-size: 1.5rem; /* Define tamanho da fonte */
+  margin: 0; /* Remove margens */
+  font-weight: 400; /* Define peso da fonte */
+}
+
+@media (max-width: 1200px) {
+  .cabecalho {
+    padding: 6%; /* Ajusta espaçamento no cabeçalho */
+  }
+  .cabecalho__menu {
+    justify-content: center; /* Centraliza o menu */
+  }
+  .apresentacao {
+    flex-direction: column-reverse; /* Altera ordem dos elementos */
+    padding: 5%; /* Ajusta espaçamento */
+  }
+  .apresentacao__conteudo {
+    width: 100%; /* Define largura total */
+  }
+  .apresentacao__links__botao {
+    width: 80%; /* Ajusta largura do botão */
+  }
 }
